@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sports.css">
+</head>
+<body>
+<!--navigation bar-->
+<div id="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a>About</a>
+       <ul>
+      <li><a href="schoolAnthem.html">School Anthem</a></li>
+      <li><a href="Student response.html">Student response</a></li>
+      <li><a href="schoolMotto.html">School Motto</a></li>
+       </ul></li>
+    <li><a>Section & staff</a>
+      <ul>
+        <li><u>Section</u></li>
+        <li><a href="primary section.html">Primary section</a></li>
+        <li><a href="secondary section.html">Secondary section</a></li>
+        <li><a href="senior section.html">senior section</a></li>
+        <li><u>staff</u></li>
+        <li><a href="primary section staff.html">Primary section staff</a></li>
+        <li><a href="secondary section staff.html">Secondary section staff</a></li>
+        <li><a href="seniro section staff.html">senior section staff</a></li>
+        <li><a href="non academic staff.html">Non academic staff</a></li>
+      </ul></li>
+    <li><a>club & socity</a>
+      <ul>
+        <li><a href="arts club.html">art club</a></li>
+        <li><a href="2sports.html">sport</a></li>
+        <li><a href="3_science_socity.html">science socity</a></li>
+        <li><a href="4_buddhist_association.html">buddhist association</a></li>
+      </ul>
+    </li>
+    <li><a href="download.html">download</a></li>
+    <li><a href="news.html">News</a></li>
+  </ul>
+
+  <img class="logo" src="logo.png" ><!--school logo-->
+</div>
+    
+  <script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-120px";
+  }
+  }
+  </script> 
+  <!--navigation bar end-->
+
+   <table style="width: 100%"><tr><td style="width: 40%">
+        
+           <div class="bodybutton1"><h2>Our Mission on sports</h2><p>Advance cutting-edge sports-specific research, educate current and future sports professionals, improve the physical and emotional lives of current and former athletes, and harness the power of sport to inspire positive social change. </p>
+               </div>
+</td> 
+<td style="width: 60%; padding: 40px;">  
+<div class="bodybutton1image"><img src="SeekPng.com_mundo-png_9647861.png" style="height: 375px; 
+" width="600px"></div>
+</td>
+
+ 
+</tr>
+</table>   
+
+<div class="bodybutton2">
+        
+                
+        <h2 class="winning" >Our some winnings from sports</h2>
+    
+</div>
+      
+
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="download.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Maris-Stella-College-U19-DIV-I-Champions-2016.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="z_p11-Royal.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="pexels-mali-maeder-1415810.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="pexels-pixabay-269948.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="DSC_8279.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="download.jpg" style="width:100%" onclick="currentSlide(1)" alt="2014 inter school volley ball compitition 1st place">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Maris-Stella-College-U19-DIV-I-Champions-2016.jpg" style="width:100%" onclick="currentSlide(2)" alt="2015 football 2nd place">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="z_p11-Royal.jpg" style="width:100%" onclick="currentSlide(3)" alt="2016 winning school from gampaha province">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pexels-mali-maeder-1415810.jpg" style="width:100%" onclick="currentSlide(4)" alt="2016 swimming under 16 3rd place">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pexels-pixabay-269948.jpg" style="width:100%" onclick="currentSlide(5)" alt="2016 cricket 1st place from islandwide">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="DSC_8279.jpg" style="width:100%" onclick="currentSlide(6)" alt="2020 cricket">
+    </div>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
+
+ 
+
+
+
+
+
+<table style="width: 100%">
+<tr><td style="width: 50% ;padding: 40px;">
+        
+  <div class="bodybutton1image"><img src="pexels-wallace-chuck-2834917.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+   " width="400px">
+ </div>  
+</td> 
+
+    
+
+<td style="width: 50%; ">   
+<div class="bodybutton1"> <h2>Basketball</h2>
+  <p>A non-contact sport played on a rectangular court. Opposing teams of five players attempt to score points by shooting a ball into a hoop at the end of the court they are attacking. The sport has been dominated by the United States since its inception.</p>
+    <div class="leaderbox">
+    <h3 class="leadertext">
+    <img src="jhon1.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+        leader of Basketball Team</h3><p class="leadertext">Jhon D.Silva</p>
+    
+    </div></div>
+</td>
+
+
+</tr>
+</table>   
+
+<table style="width: 100%">
+  <tr>
+    <td style="width: 50%">  
+      <div class="bodybutton1"><h2>cricket</h2>
+        <p>Cricket is a team sport which provides children and young people with a 
+        variety of skills needed to develop a lifelong love of sport and physical
+        activity. It is fun, inclusive, and the sport provides a wealth of 
+        opportunities to take part.Continue reading </p>
+      <div class="leaderbox">
+        <h3 class="leadertext">
+          <img src="isanka.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+            leader of Cricket Team
+        </h3>
+          <p class="leadertext">Isanka Eranga</p>
+      </div>
+      </div>
+    </td>   
+    <td style="width: 50%; padding: 40px;">   
+      <div class="bodybutton1image"><img src="pexels-yogendra-singh-4747325.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+        " width="400px">
+      </div>
+    </td>
+
+
+    
+</tr>
+</table>   
+
+
+<table style="width: 100%"><tr>
+<td style="width: 50% ;padding: 40px;">
+        
+  <div class="bodybutton1image"><img src="pexels-jo%C3%A3o-rabelo-11271047.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+   " width="400px">
+ </div>  
+</td> 
+<td style="width: 50%; ">   
+<div class="bodybutton1"> <h2>Volleyball</h2>
+  <p>A team sport featuring two teams of six players. Each team aims to score points by striking a ball over the net and grounding it on their opponent's side of the court. A common variation of the game, Beach Volleyball, also features at the Olympics.</p>
+     <div class="leaderbox">  
+    <h3 class="leadertext">
+    <img src="jhon.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+        leader of Volleyball Team</h3><p class="leadertext">Isanka Uchithangana</p>
+     
+    </div></div>
+</td>
+
+
+</tr>
+</table>   
+
+<table style="width: 100%"><tr><td style="width:50%">
+        
+  <div class="bodybutton1"><h2>Football</h2>
+    <p>The national sport is an invasion game, traditionally played between two teams of eleven players, but can also be played in other formats such as 5v5, 7v7 and 9v9. The game was born in England but has since become the most played sport in the world.</p>
+    <div class="leaderbox">
+    <h3 class="leadertext">
+    <img src="jhon.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+        leader of Football Team</h3><p class="leadertext">Poorna Lakmal</p>
+      </div></div>
+</td> 
+<td style="width: 50%; padding: 40px;">   
+<div class="bodybutton1image"><img src="pexels-mong-mong-3306490.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+" width="400px"></div>
+<tr><td>
+  
+</td></tr>
+</td>
+
+
+</tr>
+</table>   
+
+
+<table style="width: 100%"><tr><td style="width: 50% ;padding: 40px;">
+        
+  <div class="bodybutton1image"><img src="pexels-shvets-production-8007497.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+   " width="400px">
+ </div>  
+</td> 
+<td style="width: 50%; ">   
+<div class="bodybutton1"><h2>Badmintan</h2>
+   <p>Badminton is the nations number one racket sport with over a million people playing each month. We have many popular age-specific programmes that welcome you onto court, regardless of age or ability guaranteeing an experience you can trust and enjoy.</p>
+<div class="leaderbox">
+    <h3 class="leadertext">
+    <img src="jhon.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+        leader of Badmintan Team</h3><p class="leadertext">Uyanga Vinod</p>
+    </div></div>
+</td>
+
+
+</tr>
+</table>   
+
+<table style="width: 100%"><tr><td style="width: 50%">
+        
+  <div class="bodybutton1"><h2>Swimming</h2>
+    <p>Swimming has been around for centuries. It is one of the most popular sports for individuals and teams. Common water-based disciplines include recreational/competitive lane swimming, water polo, artistic swimming, diving, open water swimming and different forms of water aerobics.
+
+</p>
+ <div class="leaderbox">     
+<h3 class="leadertext">
+    <img src="jhon.jpg" class="leaderimage" height="200" style="border-radius: 50%">
+        leader of Swimming Team</h3><p class="leadertext">Poorna Lakmal</p>
+      </div></div>
+</td> 
+<td style="width: 50%; padding: 40px;">   
+<div class="bodybutton1image"><img src="pexels-heart-rules-711187.jpg" style="height: 600px; box-shadow: 20px 20px 10px #ccc;
+" width="400px"></div>
+<tr><td>
+  
+</td></tr>
+</td>
+
+ 
+</tr>
+</table>
+        
+    
+ 
+    
+    
+</div>
+
+
+<!--footer-->
+<div class="footer">
+  <center>
+    <div class="row1">
+      <img src="logo.png">
+    </div>
+    <div class="row2">
+      <ul>
+        <a href="https://www.facebook.com/p.s.lal.kumara.3"><img src="facebook.png"></a>
+					<a href="www.instagram.com"><img src="instagram.png"></a>
+					<a href="www.skype.com"><img src="skype.png"></a>
+					<a href="www.twitter.com"><img src="twitter.png"></a>
+					<a href="www.youtube.com"><img src="youtube.png"></a>
+      </ul>
+    </div>
+    <div class="row3">
+      <ul>
+        <li><a href="">Access The OBS</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">General Rules</a></li>
+        <li><a href="">Corporate Social Responsibility</a></li><br>
+        <li><a href="">School Development Society</a></li>
+        <li><a href="">parakkrama's Union</a></li>
+      </ul>
+    </div>
+  <hr>
+    <div class="row4">
+      <p>© sinc 1895</p>
+    </div>
+  <hr>
+    <div class="row5">
+      <p>Creat by UWU/ICT/20/Gruap No:07</p>
+    </div>
+  </center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

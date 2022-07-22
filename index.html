@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="index_style.css">
+	<title>Home</title>
+</head>
+<body>
+<!--navigation bar-->
+	<div id="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a>About</a>
+			   <ul>
+				<li><a href="schoolAnthem.html">School Anthem</a></li>
+				<li><a href="Student response.html">Student response</a></li>
+				<li><a href="schoolMotto.html">School Motto</a></li>
+			   </ul></li>
+			<li><a>Section & staff</a>
+				<ul>
+					<li><u>Section</u></li>
+					<li><a href="primary%20section.html">Primary section</a></li>
+					<li><a href="secondary%20section.html">Secondary section</a></li>
+					<li><a href="G:/mini%20project/Section%20snd%20Staff/senior%20section.html">Senior section</a></li>
+					<li><u>staff</u></li>
+					<li><a href="primary%20section%20staff.html">Primary section staff</a></li>
+					<li><a href="secondary%20section staff.html">Secondary section staff</a></li>
+					<li><a href="seniro section staff.html">Senior section staff</a></li>
+					<li><a href="non academic staff.html">Non academic staff</a></li>
+				</ul></li>
+			<li><a>club & socity</a>
+				<ul>
+					<li><a href="arts club.html">art club</a></li>
+					<li><a href="2sports.html">sport</a></li>
+					<li><a href="3_science_socity.html">science socity</a></li>
+					<li><a href="4_buddhist_association.html">buddhist association</a></li>
+				</ul>
+			</li>
+			<li><a href="download.html">download</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+
+		<img class="logo" src="logo.png" ><!--school logo-->
+	</div>
+		  
+	  <script>
+	  // When the user scrolls down 20px from the top of the document, slide down the navbar
+	  window.onscroll = function() {scrollFunction()};
+	  
+	  function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		  document.getElementById("navbar").style.top = "0";
+		} else {
+		  document.getElementById("navbar").style.top = "-120px";
+		}
+	  }
+	  </script> 
+<!--school image collection-->
+    <div class="slider">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			
+			<div class="slide first">
+				<img src="1.jpg">
+			</div>
+			<div class="slide">
+				<img src="2.jpg">
+			</div>
+			<div class="slide">
+				<img src="3.jpg">
+			</div>
+			<div class="slide">
+				<img src="4.jpg">
+			</div>
+			
+			<div class="navigation-auto"><!--auto navigation -->
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+			</div>
+		</div>
+			<div class="navigation-manual"><!--manual navigation -->
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>	
+	</div>
+
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 4){
+				counter = 1;
+			}
+		}, 4000);
+	</script>
+<!--school name and welcome-->
+<!--    <div class="welcome">
+		<h3>welcome to the</h3>
+        <h1>gamini vidyalaya</h1>
+        <h4>gampaha</h4>
+    </div>-->
+<!--history-->
+	<div class="history">
+		<svg  viewBox="0 -60 1350 100">
+		<text  fill="transparent" text-anchore="middle">HISTORY...</text>
+		</svg>
+		<P>Gamini Vidyalaya is one of the premier Sinhala Buddhist schools 
+			in Sri Lanka. The school was established in 1891 by the Parama 
+			Vingnganartha Buddhist society which was created by Colonel Hendry 
+			Steel Olcott.
+		</P><br>
+		<p>During the British rule of Sri Lanka, English schools were established 
+			by catholic missionaries. The aim was to implement an English educated 
+			generation suit for them and to carry out the office system conveniently.
+			 In these English schools were taught not only English language but also 
+			 induced the Buddhist students to their religion. The Buddhist people were
+			  unhappy about this action.
+		</p><br>
+		<p>At the end of the 18th century with the awakening of Buddhism in Sri Lanka,
+			 the educated Buddhists paid the attention to give English knowledge to 
+			 the Buddhist children in the Buddhist environment. Therefore Buddhist 
+			 schools were established all over the country as well as in Gampaha.
+		</p><br>
+		<p>
+			In 1880, the American Colonel Henry Steel Olcott has embraced Buddhism and
+			 joined with the Buddhist elite and established Parama Vigngnanartha 
+			 Buddhist society and created Colombo Ananda College – Colombo 1886.11.01,
+			  Dharmaraja College – Kandy 1887.06.31, Maliyadeawa College – Kurunegala
+			   1888.09.30, Dharmadutha College – Badulla 1891.08.21, Mahinda College –
+			    Gall 1892.03.01 through the society.
+		</p>
+	</div>
+<!--vision and mission-->
+	<div class="vision-mission">
+		<h2>our vision</h2>
+		<p>"Giving out Students with a great Personality in to the world, who can 
+			succeed in future challenges <br> While protecting the Social Values"</p>
+		<br>
+		<h2>our mission</h2>
+		<p>"Endowment of an inspiring to younger generation fortified with morals, 
+			virtues and intelligence in order <br> to create a spiritually fertile society"</p>
+	</div>
+<!--best result-->
+	<div class="result">
+		<div class="head"><h1>2021 best result</h1></div>
+		<div class="exam">
+			<div class="main">
+				<div class="ExamName">
+					<h3>Grade 5 Exam</h3>
+				</div>
+				<div class="ResultImg">
+					<img src="umindhu.jpg">
+				</div>	
+				<div class="discription">
+					<h2>Umindu Sannasgala</h2>
+					<p>
+						Mark: 178 <br>
+						Cut off mark: 163 <br>
+						Island Rand: 350 <br>
+						Distric Rank: 2 <br>
+					</p>
+				</div>
+			</div>
+
+			<div class="main">
+				<div class="ExamName">
+					<h3>Odinery Level</h3>
+				</div>
+				<div class="ResultImg">
+					<img src="ol.jpeg">
+				</div>	
+				<div class="discription">
+					<h2>Sarasi Witharana</h2>
+					<p>
+						Island Rand: 6 <br>
+						Distric Rank: 1 <br>
+						A:09	B:0	C:0	S:0	W:0
+					</p>
+				</div>
+			</div>
+
+			<div class="main">
+				<div class="ExamName">
+					<h3>Advance Level</h3>
+				</div>
+				<div class="ResultImg">
+					<img src="al.jpeg">
+				</div>	
+				<div class="discription">
+					<h2>Salika Wanniarachchi</h2>
+					<p>
+						Island Rand: 5 <br>
+						Distric Rank:1 <br>
+						A:3	B:	C:	S:	W:	<br>
+						Z-Core: 1.1535
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--teachers-->
+	<div class="container">
+		<div class="card">
+			<div class="imgBx">
+				<img src="principle.jpeg">
+			</div>
+			<div class="post">
+				<h2>principle</h2>
+				<p>
+					MR. Kamal gunarathna <br>
+					+94 754796478 <br>
+					 gradubgg
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBx">
+				<img src="VicePrinciple1.jpg">
+			</div>
+			<div class="post">
+				<h2>vice principle</h2>
+				<p>
+					Mss. Indrani perera<br>
+					+94 715181964 <br>
+					 uhdm f jhfd fuif
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBx">
+				<img src="VicePrinciple2.jpeg">
+			</div>
+			<div class="post">
+				<h2>vice principle</h2>
+				<p>
+					MR. Sameera senanayaka<br>
+					+94 713604243 <br>
+					 uhdm f jhfd fuif
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBx">
+				<img src="VicePrinciple3.jpeg">
+			</div>
+			<div class="post">
+				<h2>vice principle</h2>
+				<p>
+					MR. Jayantha rathnayake <br>
+					+94 784437410 <br>
+					 uhdm f jhfd fuif
+				</p>
+			</div>
+		</div>
+	</div>
+<!--footer-->
+	<div class="footer">
+		<center>
+			<div class="row1">
+				<img src="logo.png">
+			</div>
+			<div class="row2">
+				<ul>
+					<a href="https://www.facebook.com/p.s.lal.kumara.3"><img src="facebook.png"></a>
+					<a href="www.instagram.com"><img src="instagram.png"></a>
+					<a href="www.skype.com"><img src="skype.png"></a>
+					<a href="www.twitter.com"><img src="twitter.png"></a>
+					<a href="www.youtube.com"><img src="youtube.png"></a>
+				</ul>
+			<div class="row3">
+				<ul>
+					<li><a href="">Access The OBS</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">General Rules</a></li>
+					<li><a href="">Corporate Social Responsibility</a></li><br>
+					<li><a href="">School Development Society</a></li>
+					<li><a href="">parakkrama's Union</a></li>
+				</ul>
+			</div>
+		<hr>
+			<div class="row4">
+				<p>© sinc 1895</p>
+			</div>
+		<hr>
+			<div class="row5">
+				<p>Creat by UWU/ICT/20/Gruap No:07</p>
+			</div>
+		</center>
+	</div><!--footer end-->
+</body>
+</html>
